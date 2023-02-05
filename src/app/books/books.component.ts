@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksComponent implements OnInit {
   name: string = 'davilla';
-  author: string = 'mac- mac';
+  autho: string = 'mac- mac';
   src: string = 'https://www.pinterest.com/pin/96475617005743248/'
 
   constructor() {}
