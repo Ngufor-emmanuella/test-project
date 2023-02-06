@@ -1,7 +1,18 @@
 <p>books works!</p>
-<ul>
-  <li>
-    <img src="{{ src }}" alt="{{ name }}"/>
-    {{ name }} by {{ autho }}
-  </li>
+<button (click)="isShowing = !isShowing">
+
+  <ng-container *ngIf="!isShowing">Show Dress </ng-container>
+  
+  <ng-container *ngIf="isShowing">Hide Dress </ng-container>
+
+</button>
+
+
+<ul *ngIf="isShowing">
+
+  <li *ngFor="let dress of dress; let i = index">
+    {{ i + 1 }}
+    <img [src]="dress.image" [alt]="dress.name" width="50%"/>
+    {{ dress.name }} by {{ dress.author }}
+  </li> 
 </ul>
