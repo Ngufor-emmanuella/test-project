@@ -1,4 +1,4 @@
-<p>books works!</p>
+<p>Welcome to the shopping center !</p>
 <button (click)="isShowing = !isShowing">
 
   <ng-container *ngIf="!isShowing">Show Dress </ng-container>
@@ -12,7 +12,14 @@
 
   <li *ngFor="let dress of dress; let i = index">
     {{ i + 1 }}
-    <img [src]="dress.image" [alt]="dress.name" width="50%"/>
-    {{ dress.name }} by {{ dress.author }}
-  </li> 
+    <img [src]="dress.image" [alt]="dress.name" />
+    <br>
+
+    <p>{{ dress.name | titlecase }} by {{ dress.author | titlecase }}</p>
+    <br>
+    <p>{{ dress.amount | currency:'CFA' }}</p>
+
+    <button (click)="addToCard()">Add dress to list</button>
+  </li>
+  
 </ul>
