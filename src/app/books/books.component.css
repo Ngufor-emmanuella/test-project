@@ -1,44 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  width: 100%;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-li {
-  list-style-type: none;
-  margin-bottom: 5rem;
-  gap: 1rem;
-}
-
-li img {
-  width: 85%;
-  height: 85vh;
-}
-
-img:hover {
-  transform: scale(1.3);
-}
-
-p {
-  font-size: 32px;
-  font-weight: 800;
-  padding: 0 0 1rem 1rem;
-  text-align: center;
-  display: flex;
-}
-
-li :hover {
-  border: 5px solid rgb(230, 230, 14);
-  border-radius: 20px;
-  cursor: pointer;
+/* .welcome {
+  color: red;
 }
 
 button {
@@ -53,3 +14,23 @@ button:hover {
   background-color: rgb(7, 65, 7);
   color: #fff;
 }
+
+.cfno {
+  color: yelllow;
+  font-weight: 600;
+
+}
+
+/* .unorderd {
+  display: grid;
+  grid-template-columns: 25% 25%;
+  width: 50%;
+  /* justify-content: space-between;
+  margin: 0 auto; */
+
+
+/* ng-container {
+  list-style-type: none;
+  margin-bottom: 5rem;
+  gap: 1rem;
+} */ 
