@@ -1,7 +1,18 @@
-<p>books works!</p>
-<ul>
-  <li>
-    <img src="{{ src }}" alt="{{ name }}"/>
-    {{ name }} by {{ author }}
-  </li>
+<p class="welcome">Welcome to the shopping center !</p>
+<button class="button top-but" (click)="isShowing = !isShowing">
+
+  <ng-container *ngIf="!isShowing">Show Dress </ng-container>
+  
+  <ng-container *ngIf="isShowing">Hide Dress </ng-container>
+
+</button>
+
+
+<ul class="same-line" *ngIf="isShowing">
+
+  <ng-container *ngFor="let book of book; let i = index">
+
+    <app-book class="all-dress" [book]="book"></app-book>
+  </ng-container>
+  
 </ul>
