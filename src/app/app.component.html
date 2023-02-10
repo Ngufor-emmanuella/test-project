@@ -1,2 +1,22 @@
-<h1>Hello emma</h1>
-<app-books></app-books>
+<nav class="flex justify-between p-3 bg-red-300 text-white">
+  <div class="hello">
+    <a routerLink="/">My WardRobe</a>
+  </div>
+
+  <!-- <div class="nav-bar" [ngClass]="{'navbar-fixed': isFixedNavbar}">
+    <button class="hambuger" mat-icon-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+      <mat-icon>{{!navbarOpened ? 'menu': 'close'}}</mat-icon>
+    </button>
+  </div> -->
+
+  <div class="forth">
+    <a mat-button class="mx-3" routerLink="">My List</a>
+    <a mat-button class="mx-3" routerLink="/login">Login Here</a>
+    <a mat-button class="mx-3" routerLink="/register">Register Here</a>
+  </div>
+
+</nav>
+
+<div class="pips">
+  <router-outlet></router-outlet>
+</div>
