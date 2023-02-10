@@ -9,9 +9,9 @@
   <br>
   <p>{{ book.amount | currency:'CFA' }}</p>
 
-  <button *ngIf="!isInCart" (click)="addToCart()">Add dress to list</button>
+  <button class="button" *ngIf="!isInCart" (click)="addToCart()">Add dress to list</button>
   
-  <button *ngIf="isInCart" (click)="removeFromCart()">Remove dress from list</button>
+  <button class="button" *ngIf="isInCart" (click)="removeFromCart()">Remove dress from list</button>
 
 </div>
 

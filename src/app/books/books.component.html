@@ -1,5 +1,5 @@
 <p class="welcome">Welcome to the shopping center !</p>
-<button (click)="isShowing = !isShowing">
+<button class="button top-but" (click)="isShowing = !isShowing">
 
   <ng-container *ngIf="!isShowing">Show Dress </ng-container>
   
@@ -11,11 +11,8 @@
 <ul class="same-line" *ngIf="isShowing">
 
   <ng-container *ngFor="let book of book; let i = index">
-    <!-- <p class="cfa">
-      {{ i + 1 }}
-    </p>
-     -->
-    <app-book [book]="book"></app-book>
+
+    <app-book class="all-dress" [book]="book"></app-book>
   </ng-container>
   
 </ul>
