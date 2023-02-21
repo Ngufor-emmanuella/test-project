@@ -59,6 +59,7 @@ p {
   text-align: center;
   display: flex;
   color: rgb(2, 56, 2);
+  padding-left: 1rem;
 }
 
 .button {
@@ -100,6 +101,10 @@ p {
   display: none
 }
 
+form {
+  background-color: #e78d8d;
+}
+
 /* for desktop and larger screen view */
 
 @media screen and (min-device-width: 768px) {
@@ -107,15 +112,15 @@ p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(189, 75, 94);
+    background-color: #fff;
   }
   
   .hello a {
     text-decoration: none;
-    color: #fff;
+    color: #e78d8d;
     justify-content: center;
     display: flex;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 800;
   }
 
@@ -200,6 +205,16 @@ p {
   .hello {
     padding: 1rem 0.5rem 1rem 0.5rem;
     border-radius: 40px;
+  }
+
+  .forth a {
+    color: #e78d8d;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  form {
+    background-color: #e78d8d;
   }
   
 }
